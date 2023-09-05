@@ -8,9 +8,7 @@ PORT = 3001
 HOST = '0.0.0.0'
 app = Flask(__name__)
 
-### ADD THINGS HERE
-#
-###
+# todo create elements for Ariadne
 
 # root message
 @app.route("/", methods=['GET'])
