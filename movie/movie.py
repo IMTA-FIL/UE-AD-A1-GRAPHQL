@@ -26,15 +26,7 @@ def playground():
     
 @app.route('/graphql', methods=['POST'])
 def graphql_server():
-    data = request.get_json()
-    success, result = graphql_sync(
-    schema,
-    data,
-    context_value=None,
-    debug=app.debug
-    )
-    status_code = 200 if success else 400
-    return jsonify(result), status_code
+    # A COMPLETER
 
 if __name__ == "__main__":
     print("Server running in port %s"%(PORT))
